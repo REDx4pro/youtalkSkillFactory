@@ -1,0 +1,492 @@
+/* Стили для страницы со статьей !! --------!!  ----------!!! !_______! _______!*/  
+
+
+.bread {
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.breadcrumb__article {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    padding-top: 1rem;
+}
+
+.breadcrumb__article-items {
+    display: flex;
+    flex-wrap: nowrap;   
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #333333B2;
+    padding-left: 20px;
+    
+}
+
+
+.breadcrumb__article-items::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.section__article {
+    width: 70%;
+    float: left;
+    max-width: 690px;
+}
+
+@media (max-width: 925px) {
+    .section__article {
+        width: 100%;
+        float: none;
+    }
+}
+ 
+.block__statya h1 { width: 690px;
+}
+
+@media (max-width: 698px) {
+    .block__statya h1 {
+        font-size: 32px;
+        line-height: 40px;
+        width: 374px;
+    }
+}
+
+@media (max-width: 390px) {
+    .block__statya h1 {
+        font-size: 24px;
+        line-height: 32px;
+        width: 288px;
+    }
+}
+
+@media (max-width: 392px) {
+        .section__statya h1 {
+            font-size: 24px;
+            line-height: 32px;
+            width: 340px;
+        }
+        }
+
+.section__statya img { max-width: 100%;
+}
+
+
+.block__soder li {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    list-style: none;
+    background: url(images/list-style.svg) no-repeat -4px 8px;
+    padding-left: 25px;
+    padding-top: 8px;
+    color: rgba(51, 51, 51, 1);
+}
+
+.block__soder p {
+    font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+    .block__soder li:nth-child(2) {
+       display: none
+    }
+    }
+
+    @media (max-width: 1024px) {
+        .block__soder li:nth-child(3) {
+           display: none
+        }
+        }
+
+.block__item2 {
+    margin-top: 40px;
+    background-color: rgba(243, 247, 254, 1);
+    border-radius: 16px;
+}
+
+.block__item2 img {
+    position: absolute;
+    padding-top: 11px;
+    padding-left: 22px;
+}
+
+.block__item3 li {
+    padding-top: 16px;
+    list-style: none;
+    background: url(images/list-style.svg) no-repeat -4px 8px;
+    padding-left: 25px;
+    padding-top: 8px;
+}
+
+.block__item3 p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.block__item4 {
+    margin-top: 24px;
+    background: url(images/bgroze.png) no-repeat center;
+}
+
+@media (max-width: 595px) {
+    .block__item4 {
+        width: 100%;
+    }
+}
+
+.block__item4 p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    padding: 24px 104px 48px 102px;
+}
+
+@media (max-width: 595px) {
+    .block__item4 p {
+        padding: 24px 24px 24px 24px;
+    }
+}
+
+
+.block__item5 {
+    padding-top: 24px;
+    display: flex;
+    gap: 24px;
+}
+
+@media (max-width: 550px) {
+    .block__item5 {
+        flex-direction: column;
+    }
+}
+
+.block__item6 {
+    margin-top: 24px;
+    background-color: rgba(254, 250, 236, 1);
+    border-radius: 16px;
+}
+
+.block__item7 ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+} 
+
+@media (max-width: 414px) {
+    .block__item7 ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+
+.block__item7 {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon__light {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0 24px 0;
+}
+
+/*Нижниый блок с ссылками*/
+
+.list__link {
+    padding-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+    .list__link {
+       display: none
+    }
+    }
+
+.list__link li {
+    padding-right: 10px;
+}
+
+.list__link li a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(41, 99, 163, 1);
+    margin-right: 10px;
+}
+
+.list__link li:not(:last-child, :nth-child(4))::after {
+    content: '·';
+    color: rgba(73, 73, 73, 1);
+  }
+
+.article__bottom-line {
+    width: 1200px;
+    margin: 48px 0 72px 0;
+    color: rgba(222, 222, 222, 1);
+}
+
+@media (max-width: 1024px) {
+    .article__bottom-line {
+       display: none
+    }
+    }
+
+.article__bottom-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1100px;
+}
+
+@media (max-width: 1024px) {
+    .article__bottom-block {
+       display: none
+    }
+    }
+
+.article__bottom-block div:first-child {
+   display: flex;
+   flex-direction: column;
+   gap: 32px;
+    width: 348px;
+}
+
+.article__bottom-block button {
+    border: 1px solid rgba(53, 179, 169, 1);
+    background-color: rgba(53, 179, 169, 1);
+    padding: 14px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    cursor: pointer;
+    width: 238px;
+}
+
+
+
+
+/*  Стили для футера (флоэты)  */
+
+.footer
+
+{
+    clear: both;
+}
+
+/* Стили для сайдбара */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 30%;
+    float: right;
+    padding-top: 30px;
+    align-items: end;
+    padding-left: 24px;
+} 
+
+@media (max-width: 925px) {
+    .sidebar {
+        display: grid;
+         float: none;
+        width: 100%;
+        padding: 23px 0;
+    }
+
+}
+   
+.sidebar__items {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 282px;
+}
+
+@media (max-width: 500px), (max-width: 925px) {
+    .sidebar__items {
+        display: grid;
+        max-width: 100%;
+        padding: 0;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));   
+    }
+}
+
+/* Первый блок  */
+
+.item1 {
+    border-radius: 16px;
+    background-color: rgba(230, 240, 253, 1);
+    padding: 24px;
+}
+
+/* Контент под фото  */
+.one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 20px;
+}
+
+/* Стили для кнопки */ 
+
+.item__content button {
+    border: 1px solid rgba(53, 179, 169, 1);
+    background-color: rgba(53, 179, 169, 1);
+    padding: 14px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Второй блок  */
+
+.item2 {
+    border-radius: 16px;
+    background-color: rgb(255, 255, 255);
+    padding: 24px;
+    border: 1px rgba(222, 222, 222, 1) solid;
+}
+
+.item__image {  
+    display: flex;
+    justify-content: center;
+}
+
+.line__item {
+    background: rgb(157, 157, 157);
+    opacity: 0.3;
+    margin: 16px 0;
+}
+
+.two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item__content li {
+    list-style: none;
+    background: url(images/list-style.svg) no-repeat -4px 8px;
+    padding-left: 20px;
+    padding-top: 8px;
+    color: rgba(51, 51, 51, 1);
+    font-size: 14px;
+  }
+
+  .item__content ul {
+    padding-bottom: 16px;
+  }
+
+.content__item {
+    display: flex;
+}
+
+.lila {
+    padding-top: 16px;
+}
+
+.two {
+    padding-bottom: 16px;
+}
+
+
+.item__teg-side {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 120px;
+    margin: -10px;
+
+}
+
+.item__teg-side li {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(243, 244, 248, 0.7);
+    border-radius: 6px;
+    padding: 3px 6px;
+    font-size: 14px;
+    font-weight: 600; 
+    margin-bottom: 8px;
+}
+
+.item__teg-side li:first-child::before {
+    content: url(images/list.png);
+    width: 18px;
+    height: 19px;
+    padding-right: 4px;
+}
+
+.item__teg-side li:last-child::before {
+    content: url(images/video.png);
+    width: 18px;
+    height: 19px;
+    padding-right: 4px;
+}
+
+/* Третий блок  */
+
+.item3 {
+    border-radius: 16px;
+    background-image: url(images/Group.png) ;
+    background-size: 100% 100%;
+    height: 300px;
+}
+
+/* Четвертый блок  */
+
+.item4 {
+    border: 1px solid rgba(222, 222, 222, 1);
+    border-radius: 24px;
+    background: url(images/item4box.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.four {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px;
+}
+
+@media (max-width: 1235px) {
+
+    .four {
+        padding: 24px;
+    }
+}
+
+.item4 button {
+    border: 1px solid rgba(53, 179, 169, 1);
+    background-color: rgba(53, 179, 169, 1);
+    padding: 14px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    cursor: pointer;
+    max-width: 108px;
+}
